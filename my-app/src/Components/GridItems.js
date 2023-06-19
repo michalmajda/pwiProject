@@ -13,7 +13,7 @@ const GridItems = () => {
     const { t, i18n } = useTranslation();
     const [descriptions, setDescriptions] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:3001/api/data')
+        axios.get('https://pwiproject.onrender.com/api/data')
         .then(response => {
             setDescriptions(response.data)
             console.log(response.data);

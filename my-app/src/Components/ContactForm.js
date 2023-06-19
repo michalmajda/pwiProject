@@ -16,7 +16,7 @@ const ContactForm = () => {
         message: message.value,
         };
         try {
-            const response = await axios.post('http://localhost:3001/contact', details);
+            const response = await axios.post('https://pwiproject.onrender.com/contact', details);
             console.log(response.data);
             setStatus('Email sent successfully');
           } catch (error) {
